@@ -12,7 +12,7 @@ O sistema permite o cadastro de usuários, abertura e gerenciamento de chamados,
 
  🖼️ Diagrama de Classes UML
 
-![Diagrama](docs/Diagrama%20UMI.png)
+![Diagrama](docs/Diagrama%20UMl.png)
 
 ---
 
