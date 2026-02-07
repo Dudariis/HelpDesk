@@ -8,29 +8,26 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Duda\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\grautecnico\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Duda\\HelpDesk\\HelpDesk.csproj",
+      "projectUniqueName": "C:\\Users\\grautecnico\\hELPdESK\\HelpDesk.csproj",
       "projectName": "HelpDesk",
-      "projectPath": "C:\\Users\\Duda\\HelpDesk\\HelpDesk.csproj",
-      "packagesPath": "C:\\Users\\Duda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Duda\\HelpDesk\\obj\\",
+      "projectPath": "C:\\Users\\grautecnico\\hELPdESK\\HelpDesk.csproj",
+      "packagesPath": "C:\\Users\\grautecnico\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\grautecnico\\hELPdESK\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Duda\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\grautecnico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

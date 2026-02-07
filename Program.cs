@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Collections.Generic; // Necessário para usar List<>
+using System.Collections.Generic;
+using System.Net.Http.Headers; // Necessário para usar List<>
 
 namespace HelpDesk
 {
@@ -12,7 +13,7 @@ namespace HelpDesk
             Tecnico tecnico = new Tecnico(1, "João", "joao@email.com", "Em andamento", "TEC-123");
             Cliente cliente = new Cliente(2, "Maria", "maria@email.com", "4002-8922", "Sim", "Em andamento");
             Chamado chamado = new Chamado(1, "Problema com o computador", "Em andamento", cliente.Id, tecnico.Id, 1);
-            cliente.senha = "1234";   
+               
         
         
             //  CRIANDO A LISTA DE HISTÓRICO
