@@ -6,6 +6,7 @@ public class Cliente : Usuario
     // Declaração de métodos
     public string abrirChamado;
     public string visualizarStatus;
+    protected int senha;
 
 
     public string AbrirChamado
@@ -18,6 +19,12 @@ public class Cliente : Usuario
     {
         get { return visualizarStatus; }
         set { visualizarStatus = value; }
+    }
+
+    protected int senha
+    {
+        get { return senha; }
+        set {senha = value; }
     }
 
     public Cliente(int id, string nome, string email, string telefone, string abrirChamado, string visualizarStatus) : base(id, nome, email)
