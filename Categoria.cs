@@ -3,6 +3,7 @@ namespace HelpDesk;
 
 public class Categoria
 {
+    // Declaração de métodos
     public int id;
     public string nome;
     public int Id

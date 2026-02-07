@@ -3,6 +3,7 @@ namespace HelpDesk;
 
 public abstract class Usuario
 {
+    // Declaração de métodos
     public int id;
     public string nome;
     public string email;

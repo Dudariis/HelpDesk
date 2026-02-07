@@ -3,6 +3,7 @@ namespace HelpDesk;
 
 public class Tecnico : Usuario
 {
+    // Declaração de métodos
     public string mudarStatus;
     public string matricula;
 

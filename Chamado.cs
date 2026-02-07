@@ -3,6 +3,7 @@ namespace HelpDesk;
 
 public class Chamado : HistoricoChamada
 {
+    // Declaração de métodos
     public int id;
     public string descricao;
     public string status;

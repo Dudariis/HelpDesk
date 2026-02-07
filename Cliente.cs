@@ -3,6 +3,7 @@ namespace HelpDesk;
 
 public class Cliente : Usuario
 {
+    // Declaração de métodos
     public string abrirChamado;
     public string visualizarStatus;
 

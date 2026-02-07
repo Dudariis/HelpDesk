@@ -3,7 +3,7 @@ namespace HelpDesk;
 
   public class HistoricoChamada
     {
-        // Use propriedades simplificadas para o código ficar mais limpo
+        // Declaração de métodos
         public string Registro { get; set; }
         public string Descricao { get; set; }
         public DateTime DataRegistro { get; set; }
