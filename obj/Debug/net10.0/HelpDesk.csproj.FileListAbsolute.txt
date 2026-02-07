@@ -1,0 +1,15 @@
+C:\Users\Duda\HelpDesk\bin\Debug\net10.0\HelpDesk.exe
+C:\Users\Duda\HelpDesk\bin\Debug\net10.0\HelpDesk.deps.json
+C:\Users\Duda\HelpDesk\bin\Debug\net10.0\HelpDesk.runtimeconfig.json
+C:\Users\Duda\HelpDesk\bin\Debug\net10.0\HelpDesk.dll
+C:\Users\Duda\HelpDesk\bin\Debug\net10.0\HelpDesk.pdb
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.AssemblyInfoInputs.cache
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.AssemblyInfo.cs
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.csproj.CoreCompileInputs.cache
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.sourcelink.json
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.dll
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\refint\HelpDesk.dll
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.pdb
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\HelpDesk.genruntimeconfig.cache
+C:\Users\Duda\HelpDesk\obj\Debug\net10.0\ref\HelpDesk.dll
