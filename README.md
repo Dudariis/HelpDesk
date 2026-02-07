@@ -73,7 +73,7 @@ As classes de serviço dependem de interfaces, e não de implementações concre
 
 ---
 
- 👩‍🎓 Autora
+ 👩‍🎓 Autoras
 
 - Maria Eduarda
 - Evelyn Karina
