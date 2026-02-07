@@ -1,35 +1,18 @@
 using System;
 namespace HelpDesk;
 
-public class HistoricoChamada
-{
-    public string registro;
-    public string descricao;
-    public DateTime dataRegistro;
-
-    public string Registro
+  public class HistoricoChamada
     {
-        get { return registro; }
-        set { registro = value; }
-    }
+        // Use propriedades simplificadas para o código ficar mais limpo
+        public string Registro { get; set; }
+        public string Descricao { get; set; }
+        public DateTime DataRegistro { get; set; }
 
-    public string Descricao
-    {
-        get { return descricao; }
-        set { descricao = value; }
+        public HistoricoChamada(string registro, string descricao, DateTime dataRegistro)
+        {
+            this.Registro = registro;
+            this.Descricao = descricao;
+            this.DataRegistro = dataRegistro;
+        }
     }
-
-
-    public DateTime DataRegistro
-    {
-        get { return dataRegistro; }
-        set { dataRegistro = value; }
-    }
-
-    public HistoricoChamada(string registro, string descricao, DateTime dataRegistro)
-    {
-        this.registro = registro;
-        this.descricao = descricao;
-        this.dataRegistro = dataRegistro;
-    }
-}
+    

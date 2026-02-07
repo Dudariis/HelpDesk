@@ -1,48 +1,45 @@
 ﻿using System;
-using System.Net;
-namespace HelpDesk;
+using System.Collections.Generic; // Necessário para usar List<>
 
-class Program
+namespace HelpDesk
 {
-    static void Main(string[] args)
+    // --- CLASSE PROGRAM (Onde o erro estava acontecendo) ---
+    class Program
     {
-        // ---- Dados dos usuários----
-        Tecnico tecnico = new Tecnico(1, "João", "joao@email.com", "Em andamento", "TEC-123");
-        Cliente cliente = new Cliente(2, "Maria", "maria@email.com", "4002-8922", "Sim", "Em andamento");
-        Chamado chamado = new Chamado(1, "Problema com o computador", "Em andamento", cliente.Id, tecnico.Id, 1);
+        static void Main(string[] args)
+        {
+            // 1. Criando os objetos base (Certifique-se que as classes existam no seu projeto)
+            Tecnico tecnico = new Tecnico(1, "João", "joao@email.com", "Em andamento", "TEC-123");
+            Cliente cliente = new Cliente(2, "Maria", "maria@email.com", "4002-8922", "Sim", "Em andamento");
+            Chamado chamado = new Chamado(1, "Problema com o computador", "Em andamento", cliente.Id, tecnico.Id, 1);
 
-      
-        // ---- Registros do usuário ----
-        Console.WriteLine("Dados do Técnico:");
-        tecnico.ExibirDados();
+            // 2. CRIANDO A LISTA DE HISTÓRICO (O QUE FALTAVA)
+            // Você precisa instanciar uma lista para guardar os objetos
+            List<HistoricoChamada> listaDeHistoricos = new List<HistoricoChamada>();
 
-        Console.WriteLine("\nDados do Cliente:");
-        cliente.ExibirDados();
+            // Adicionando alguns registros de exemplo na lista
+            listaDeHistoricos.Add(new HistoricoChamada("REG01", "Abertura do chamado", DateTime.Now.AddHours(-2)));
+            listaDeHistoricos.Add(new HistoricoChamada("REG02", "Técnico analisando hardware", DateTime.Now.AddHours(-1)));
 
-        Console.WriteLine("\nDados do Chamado:");
-        Console.WriteLine($"ID: {chamado.Id}");
-        Console.WriteLine($"Descrição: {chamado.Descricao}");
-        Console.WriteLine($"Status: {chamado.Status}");
-        Console.WriteLine($"ID do Cliente: {chamado.IdCliente}");
-        Console.WriteLine($"ID do Técnico: {chamado.IdTecnico}");
-        Console.WriteLine($"Categoria: {chamado.Categoria}"); 
+            // 3. EXIBIÇÃO
+            Console.WriteLine("Dados do Técnico:");
+            tecnico.ExibirDados();
 
- 
-        // ---- Data e Hora ----
-        DateTime agora = DateTime.Now;
-        Console.WriteLine($"Horário de mudança de status: {agora}");
-        
+            Console.WriteLine("\nDados do Cliente:");
+            cliente.ExibirDados();
 
-        // ---- Status do chamado ----
-        Console.WriteLine("\n=======");
-        Console.WriteLine($"CHAMADO #{chamado.Id} - {chamado.Id}");
-        Console.WriteLine($"TÉCNICO RESPONSÁVEL: {chamado.idTecnico}");
-        Console.WriteLine("---------");
-        Console.WriteLine("HISTÓRICO DE ATENDIMENTO:");
+            Console.WriteLine("\n=======");
+            Console.WriteLine($"CHAMADO #{chamado.Id}");
+            Console.WriteLine($"TÉCNICO RESPONSÁVEL: {tecnico.Nome}");
+            Console.WriteLine("---------");
+            Console.WriteLine("HISTÓRICO DE ATENDIMENTO:");
 
-        foreach (var registro in HistoricoChamada) {
-        Console.WriteLine($"[{registro.Data:dd/MM HH:mm}] - {registro.Descricao}");
-}
-        
-}
+            // CORREÇÃO: O foreach usa a variável 'listaDeHistoricos' e não a classe 'HistoricoChamada'
+            foreach (var registro in listaDeHistoricos) 
+            {
+                // Note o uso de DataRegistro (nome correto da sua propriedade)
+                Console.WriteLine($"[{registro.DataRegistro:dd/MM HH:mm}] - {registro.Descricao}");
+            }
+        }
+    }
 }
